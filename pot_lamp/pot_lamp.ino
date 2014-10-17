@@ -5,14 +5,14 @@ int connectedPin = 6;
 int potPin = 11;
 int maxPotInput = 1024;
 #define noColorOptions 4
-#define PURPLE {50,50,50}
+#define PURPLE {10,80,72} 
 #define BLUE {0,0,127}
 #define RED {0,127,0}
 #define WHITE {127,127,127}
 #define CLOSED {0,0,0}
 
 int colorBorders[] = {256,512,768,1023};
-int colors[][4]= {CLOSED,WHITE,RED,WHITE};
+int colors[][3]= {CLOSED,WHITE,RED,BLUE};
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(noLeds, connectedPin, NEO_RGB + NEO_KHZ800);
 
 // Pin D6 has an LED connected on FLORA.
